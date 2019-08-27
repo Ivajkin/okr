@@ -11,3 +11,10 @@ before_script:
 script:
 - ng lint
 - ng build --prod --base-href https://t-palmer.github.io/travis-demo/
+# the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+- sonar-scanner
+addons:
+  sonarcloud:
+    organization: "ivaikin"
+    token:
+      secure: "travis encrypt 3d1385289db59c6fbef8cdddb91ca3fa80b1b630" # encrypted value of your token
