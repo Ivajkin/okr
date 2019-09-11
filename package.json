@@ -1,8 +1,7 @@
 {
   "name": "okr",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
-  "angular-cli": {},
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,14 +9,12 @@
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor",
-    "preinstall": "npm install -g @angular/compiler-cli"
+    "preinstall": "(npm list -g @angular/cli || npm i -g @angular/cli)"
   },
   "private": true,
   "dependencies": {
-    "@angular-devkit/build-angular": "^0.803.0",
+    "@angular-devkit/build-angular": "^0.803.3",
     "@angular/common": "^2.3.1",
-    "@angular/compiler": "^2.3.1",
-    "@angular/compiler-cli": "^2.3.1",
     "@angular/core": "^2.3.1",
     "@angular/forms": "^2.3.1",
     "@angular/http": "^2.3.1",
@@ -27,10 +24,10 @@
     "core-js": "^2.4.1",
     "rxjs": "^5.0.1",
     "ts-helpers": "^1.1.1",
-    "zone.js": "^0.7.2"
+    "zone.js": "^0.10.2"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "^2.3.1",
+    "@angular/cli": "^8.3.3",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
     "codelyzer": "^5.1.0",
